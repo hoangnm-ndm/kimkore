@@ -1,0 +1,84 @@
+.learn {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	border-bottom: 3px solid $c2;
+	position: relative;
+	z-index: 2;
+	&_item {
+	    position: relative;
+	    width: 25%;
+	    cursor: pointer;
+	    display: inline-flex;
+	    overflow: hidden;
+	    @media all and (max-width: 767px){
+				width: 50%;
+			}
+	    .overlay {
+	    	position: absolute;
+	    	opacity: 0;
+	    	transition: all 0.3s ease;
+	    	width: 100%;
+	    	display: block;
+	    	height: auto;
+	    	top: 0;
+	    	left: 0;
+	    	right: 0;
+	    	bottom: 0;
+	    	background: url(../images/background/bg-overlay.png) no-repeat center center;
+	    	background-size: contain;
+	    	div {
+	    		width: 100%;
+	    		display: flex;
+	    		justify-content: center;
+	    		align-items: center;
+	    		position: absolute;
+	    		top: 0;
+	    		left: 0;
+	    		right: 0;
+	    		bottom: 0;
+	    		text-align: center;
+	    		p {
+	    			color: #dfb16d;
+	    			font-size: 20px;
+	    			font-weight: 700;
+	    			text-transform: uppercase;
+	    		}
+	    	}
+	    }
+	    >img {
+	    	width: 100%;
+	    }
+	    &:hover {
+	    	.overlay {
+	    		opacity: 1;
+	    	}
+	    }
+	}
+	.people {
+		position: absolute;
+		background: url(../images/background/bg-people.png) no-repeat center center;
+		bottom: -35px;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 100%;
+		min-height: 62px;
+		display: flex;
+		justify-content: center;
+		padding-top: 16px;
+		text-align: center;
+		@media all and (max-width: 767px){
+			width: 90%;
+			background-size: contain;
+		}
+		p {
+			color: #dfb16d;
+			font-size: 12px;
+			text-transform: uppercase;
+			.size {
+				font-size: 14px;
+			}
+		}
+	}
+}

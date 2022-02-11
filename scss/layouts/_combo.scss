@@ -1,0 +1,111 @@
+.combo {
+	padding-top: 75px;
+	padding-bottom: 115px;
+	background-color: #000;
+	position: relative;
+	border-bottom: 3px solid $c2;
+	@media all and (max-width: 767px){
+		padding-bottom: 70px;
+	}
+	.row {
+		padding-left: -10px;
+		padding-right: -10px;
+		.col-sm-4 {
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+		@media all and (max-width: 767px) {
+			padding-left: -15px;
+			padding-right: -15px;
+			.col-sm-4 {
+				padding-left: 15px;
+				padding-right: 15px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	&_item {
+		background-color: #131313;
+		position: relative;
+		&_top {
+			margin-bottom: 40px;
+			img{
+				width: 100%;
+			}
+			h2 {
+				position: absolute;
+				display: block;
+				left: 50%;
+				transform: translateX(-50%);
+				color: #fff;
+				font-size: 14px;
+				font-weight: 700;
+				text-transform: uppercase;
+				top: 27px;
+			}
+		}
+		&_bottom {
+			color: #fff;
+			padding: 0 39px 60px 28px;
+			&_info {
+				margin-bottom: 20px;
+				h4 {
+					font-size: 10px;
+					margin-bottom: 3px;
+				}
+				p {
+					color: #a0a0a0;
+					font-size: 10px;
+					line-height: 15px;
+				}
+			}
+		}
+	}
+	.partner_title {
+		width: 177px;
+	    height: 177px;
+	    bottom: -92.5px;
+	    position: absolute;
+	    left: calc(50% - 88.5px);
+	    background-image: url(../images/background/bg-partner.png);
+	    display: -webkit-box;
+	    display: -ms-flexbox;
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    text-align: center;
+	    @media all and (max-width: 991px){
+			width: 140px;
+		    height: 140px;
+		    bottom: -73.5px;
+		    left: calc(50% - 70px);
+		    background-size: contain;
+		}
+	    p {
+	    	font-size: 16px;
+		    font-weight: 700;
+		    color: #000;
+		    text-transform: uppercase;
+	    }
+	    &:before {
+		    content: "";
+		    width: 13px;
+		    height: 13px;
+		    transform: rotate(45deg);
+		    border-top: 3px solid #000;
+		    border-left: 3px solid #000;
+		    position: absolute;
+		    top: 27px;
+	    }
+	    &:after {
+		    content: "";
+		    width: 13px;
+		    height: 13px;
+		    transform: rotate(45deg);
+		    border-bottom: 3px solid #000;
+		    border-right: 3px solid #000;
+		    position: absolute;
+		    bottom: 28px;
+	    }
+	}
+}

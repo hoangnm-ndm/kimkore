@@ -1,0 +1,102 @@
+.about-slide {
+	text-align: center;
+	background-color: #000;
+	padding-top: 100px;
+	padding-bottom: 123px;
+	border-bottom: 3px solid $c2; 
+	position: relative;
+	color: #d0d0d0;
+	z-index: 4;
+	@media all and (max-width: 991px){
+		padding-top: 63px;
+		padding-bottom: 72px;
+	}
+	@media all and (max-width: 767px){
+		padding-top: 63px;
+		padding-bottom: 75px;
+	}
+	&_slider {
+		&-item {
+			display: flex;
+			// @include middle;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			@media all and (max-width: 1199px){
+
+			}
+			img {		
+				object-fit: cover;
+				margin: 0 auto;
+				margin-bottom: 30px;
+			}
+			h2 {
+				font-size: 10px;
+				font-weight: 600;
+				text-transform: uppercase;
+				line-height: 10px;
+				margin-bottom: 20px;
+			}
+			p {
+				font-size: 10px;
+			}
+		}
+		.slick-slide {
+		    margin: 0 52.5px;
+		}
+		.slick-list {
+		    margin: 0 -52.5px;
+		    width: 90%;
+		    left: calc(5% + 52.5px);
+		}
+		.icon-arrow-left {
+			width: 7px;
+			height: 11px;
+			background: url(../images/icon/about-arrow-left.png) no-repeat center center;
+			top: calc(50% - 5.5px);
+			left: 10px;
+		}
+		.icon-arrow-right {
+			width: 7px;
+			height: 11px;
+			background: url(../images/icon/about-arrow-right.png) no-repeat center center;
+			top: calc(50% - 5.5px);
+			right: 10px;
+		}
+	}
+	.contact_title {
+		&_block1 {
+			background: url(../images/background/about-contact-title.png) no-repeat center center;
+			position: absolute;
+			left: 50%;
+			transform: translateX(-50%);
+			bottom: -27px;
+			display: flex;
+			text-align: center;
+			justify-content: center;
+			padding-top: 7px;
+			width: 444px;
+			max-width: 90%;
+			background-size: contain;
+			height: 49px;
+			z-index: 2;
+			p {
+				line-height: 30px;
+				text-transform: uppercase;
+				font-size: 12px;
+				color: $c2;
+			}
+		}
+		&_block2 {
+			width: 75px;
+			height: 75px;
+			border: 2px solid $c2;
+			transform: rotate(45deg);
+			position: absolute;
+			left: calc(50% - 37.5px);
+			bottom: -40px;
+			z-index: 1;
+			background-color: #000;
+		}
+	}
+}
